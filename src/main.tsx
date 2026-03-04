@@ -1,10 +1,13 @@
-import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client';
-import App from './App.tsx';
-import './index.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
+const App = () => {
+    return (
+        <div>
+            <h1>Welcome to the VLSI Learning Application</h1>
+            <p>This is a basic setup for a React application focused on VLSI concepts.</p>
+        </div>
+    );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
